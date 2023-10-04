@@ -1,0 +1,201 @@
+
+/* ======================================= */
+
+/* below adds padding and borders to elements, retrieved from box model fix**/
+
+html {
+box-sizing: border-box;
+}
+*
+, *:before, *:after {
+box-sizing: inherit;
+}
+
+
+/* ======================================= */
+
+/* clearfix */
+
+.clearfix:before
+.clearfix:after {
+	content:"";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+/* ======================================= */
+
+/* Typography */
+
+	h1 {
+		font-family: "lisbeth-display", sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 100pt;
+		color:#e79aa8;
+		}
+
+	h4 {
+		font-family: 'lato',sans-serif;
+		text-align: center;
+		font-weight: bold;
+	}
+
+
+	p {
+		font-size: 1em;
+		text-align: center;
+		font-family:'lato', sans-serif; 
+		font-weight: normal;
+	}
+
+	h2 {
+		font-family: "lisbeth", sans-serif;
+		font-weight: 300;
+		font-style: normal;
+		font-size: 30pt;
+	}
+
+	h3 {
+		font-family: "lisbeth", sans-serif;
+		font-weight: 300;
+		font-style: normal;
+		font-size: ;
+	}
+
+	a {
+		color: #c94a00;
+	}
+
+/* ======================================= */
+
+/* Containers */
+
+.container-fluid .row {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.row {
+	margin:"0,auto"px;
+
+}
+
+/* header  ===  */
+
+/* justify content information found on W3 Schools */
+
+.navbar {
+    background-color: olive; /* Background color for the navbar */
+    display: flex;
+    justify-content: space-between; /* this pushes the logo and links to ends*/
+    align-items: center;
+    max-width:100%;
+    margin: 0 auto;
+}
+
+.navbar-left {	
+	padding: 20px
+}
+
+.navbar-right {
+	text-align: right;
+	padding: 20px;
+}
+
+.nav {
+	display: inline;
+}
+
+.nav-list li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 40px; /* Adds spacing between list items */
+    font-size: 25px;
+
+}
+
+.nav-list li:last-child {
+    margin-right: 0; /* Remove margin from the last list item from w3 schools*/
+}
+
+.nav-list li a {
+    text-decoration: none; /* Removes underline from links */
+    color: #fff; /* Link text color */
+}
+
+/**** HERO ==== 
+I learnt how to center text on an image via W3 Schools https://www.w3schools.com/howto/howto_css_image_text.asp
+ and how to size responsively***/
+
+.responsive {
+	width:100%;
+	height:autp;
+}
+.container-fluid {
+	width: 100%;
+	}
+
+.hero {
+	position: relative;
+	text-align: center;
+	
+}
+
+.centered {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/*** Welcome Section ***/
+
+section#welcome {
+	background-color: white;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	text-align: center;
+	justify-content: center;
+}
+
+/** Card Section **/
+
+}
+img#cards { 
+	display: block;
+	align-content: center;}
+
+section#cards {
+	display: inline-block;
+}
+
+
+section#orangecup {
+	color: white;
+	background-color: olive;
+	padding: 10pt;
+	width: 30%;
+	margin:10px;
+	border-radius:10px
+
+}
+
+section#rainbowcup {
+	color: white;
+	background-color: olive;
+	padding: 10pt;
+	width: 30%;
+	margin:10px;
+	border-radius:10px
+}
+
+section#bluecup {
+	color: white;
+	background-color: olive;
+	padding: 10pt;
+	width: 30%;
+	margin:10px;
+	border-radius:10px
+}
+

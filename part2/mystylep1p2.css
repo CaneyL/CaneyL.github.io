@@ -1,0 +1,90 @@
+/* styles.css */
+h2 {
+    font-family:font-family: "meno-banner-condensed", serif;
+    font-weight: 400;
+    color: #c2954c;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color:#DFD0BB;
+}
+h1 {
+    font-family: "ivypresto-display", serif;
+    font-weight: 400;
+    font-style: italic;
+    margin: 100px;
+    padding: 0;
+  
+}
+header {
+    display: flex;
+    align-items: center;
+    background-color: #DFD0BB;
+    color: #c2954c;
+    text-align: left justify;
+    padding: 100px;
+}
+
+.header-content {
+    flex: 1;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 48px;
+}
+.header-image {
+    margin: 15px;
+}
+
+.header-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+main {
+    display: flex;
+    align-items: center;
+    min-height: 75vh;
+    background-color: #DFD0BB;
+}
+
+.gallery1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding: 20px;
+    justify-items: center;
+    min-height: 75vh;
+    background-color:#eaf2f7;
+}
+
+.gallery1 img {
+    max-width: 100%;
+    height: auto;
+    border: 10px solid #ffffff;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+.paragraph {
+    background-size: 600px;
+    padding: 20px;
+    justify-items: center;
+}
+.gallery2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 20px;
+    justify-items: center;
+    min-height: 75vh;
+    background-color: #c2954c;
+}
+
+.gallery2 img {
+    max-width: 100%;
+    height: auto;
+    border: 10px solid #ffffff;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
