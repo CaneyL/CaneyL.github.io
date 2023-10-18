@@ -1,0 +1,114 @@
+/*-- Style page for new hub page*/
+
+/* colours
+
+light gold: #e3c290
+
+/*box model fix*/
+
+html {
+	box-sizing: border-box;
+}
+
+*,*:before, *:after {
+	box-sizing: inherit;
+}
+
+/*--------------------------------------*/
+
+/*clearfix*/
+
+.clearfix:before,
+.clearfix:after {
+		content: " ";
+		display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/*--------------------------------------*/
+
+h1 {Mr Darcy Bold
+font-family: "mr-darcy", sans-serif;
+font-weight: 600;
+font-style: normal;
+color:#e3c290;
+font-size: 2em}
+
+h2 {font-family: "origins", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 2em}
+
+/*--------------------------------------*/
+
+*{
+	margin: 0;
+}
+body {
+	font-size:2em;
+	text-align: center;
+}
+h1{
+	;
+	}
+
+a {
+	color:#e3c290;
+	text-decoration: none;
+	font-family: "origins", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+a:hover {
+	color: darkolivegreen;
+	transition: 2.5s;
+}
+
+
+.image-container {
+	position: relative;
+	text-align: center;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.centered-text {
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	/* Found on W3 schools to center*/
+	transform: translate(-50%, -50%);
+}
+
+
+#jumbotron {
+
+	background-color: #2a2a2c;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("gold.png");
+	background-size: 100vh;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	overflow: hidden;
+	position:relative;
+}
+
+	
+/*
+
+img#overlay:hover {
+	opacity: 0.1;
+	transition: 1s;
+}
+*/
+
+}

@@ -1,0 +1,166 @@
+/*light gold: #e3c290*/
+
+/*box model fix*/
+html {
+    box-sizing: border-box;
+}
+
+*,*:before, *:after {
+    box-sizing: inherit;
+}
+
+/*--------------------------------------*/
+
+/*clearfix*/
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*--------------------------------------*/
+
+* {
+    text-decoration: none;
+}
+body {
+    background-color: #2a2a2c;
+    background-image: url("file:///Users/lauracaney/Desktop/CaneyL.github.io/part4/interior/interiorimages/nightsky.jpg");
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-position: center;
+
+}
+
+h1 {
+    font-family: "mr-darcy", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #e3c290;
+    font-size: 2em;
+}
+
+h2 {
+    font-family: "origins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+    color: #e3c290;
+}
+
+h3 {
+    font-family: "mr-darcy", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5em;
+    color: #e3c290;
+}
+
+
+/*---------------------------------------*/
+
+section#goodluck {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.centered-text {
+    margin: 0 auto;
+    top: 20%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: #e3c290;
+}
+
+section#cards {
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding: 0px;
+    top: 300px;
+    margin: 10px;
+}
+
+img#card1:hover, img#card2:hover, img#card3:hover, img#card4:hover {
+    opacity: 0;
+    transition: 2.5s;
+}
+
+img#card3 {
+    z-index: 10;
+}
+
+img#rabbit {
+    position: absolute;
+    z-index: 2;
+    left: 18%;
+    top: 20%;
+    transition: opacity 1s;
+}
+
+.rabbit-reveal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.rabbit-reveal:hover .rabbit img,
+.rabbit-reveal:hover .button {
+    opacity: 1;
+}
+
+.button {
+  border: 2px solid #e3c290; /* Added 'solid' to specify border style */
+  background-color: black;
+  padding: 10px 20px 10px 20px; /* Corrected padding values */
+  border-radius: 15px;
+  color: #e3c290;
+  text-align: center;
+  display: inline;
+  font-size: 10px;
+  line-height: 25px;
+  cursor: pointer;
+  margin-top: 300px;
+  margin-right: 100px;
+  margin-left: 100px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: darkred;
+  color: black;
+  text-decoration: none;
+}
+
+.button2:hover {
+  background-color: darkolivegreen;
+  color: black;
+  text-decoration: none;
+}
+
+
+
+
+
+

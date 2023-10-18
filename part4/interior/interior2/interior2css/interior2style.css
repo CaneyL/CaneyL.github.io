@@ -1,0 +1,127 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* ++++++++++++++++++++++++++++++++++ */
+
+/* clearfix */
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/* ++++++++++++++++++++++++++++++++++ */
+* {
+	margin: 0;
+	font-family: "mr-darcy", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #e3c290;
+	text-decoration: none;
+
+}
+
+h1 {
+    font-family: "mr-darcy", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #e3c290;
+    font-size: 3em;
+    align-content: center;
+}
+
+
+/* ++++++++++++++++++++++++++++++++++ */
+
+#welcome {
+	margin-top: 0px;
+	background-color: black;
+	padding: 40px;
+}
+.container {
+	display: flex;
+	justify-content: center;
+}
+
+#collage {
+    background-color: black;
+    background-image: url("./images/background.jpg");
+}
+
+
+img#landscape {
+	position: absolute;
+    z-index: 2;
+    right: 0%;
+    top: 40%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+img#moon {
+	position: absolute;
+	top: 40%;
+	left: 30%;
+	z-index: 1;
+	height: 70%;
+}
+
+
+
+img#hands {
+	position: absolute;
+	right: 35%;
+	bottom: 15%;
+	z-index: 4;
+	height: 55%;
+}
+
+img#lizard {
+	position: absolute;
+	top: 10%;
+	right: 0%;
+	z-index: 5;
+	height: 80%;
+	transform: rotate(45deg); 
+}
+
+img#lizard:hover {
+	top: 7%;
+	right: 5%;
+	transition: 2s;
+}
+
+img#rabbit {
+	position: absolute;
+	top: 30%;
+	right: 65%;
+	z-index: 5;
+	height: 30%;
+	transform: rotate(-70deg); 
+}
+
+img#rabbit:hover {
+	top: 25%;
+	right: 60%;
+	transition: 2s;
+}
+
+img#hat{
+	position: absolute;
+	top: 50%;
+	right: 75%;
+	z-index: 5;
+	height: 25%;
+	transform: rotate(200deg); 
+}

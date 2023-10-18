@@ -1,0 +1,220 @@
+/*--
+
+dark blue
+#1e3d83
+
+light green
+#eaebdd 
+
+Peach
+#f8dac9 
+
+orange
+#ee874d 
+
+yellow
+#efd893 
+
+purple
+#9b7dac 
+
+
+green
+#44846a 
+
+*/
+
+/* box model and clear fix */
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/*-- Clearfix taken from exercise*/
+
+.row:before,
+.row:after {
+	content: " ";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+}
+
+/* UNIVERSAL STYLING**/
+
+* {
+	font-family: "gyst-variable", sans-serif;
+	text-decoration: none;
+}
+
+body {
+    font-family: "gyst-variable", sans-serif;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");;
+    background-color: #eaebdd;
+    color:#1e3d83;
+
+}
+
+
+
+/* fonts */
+
+h1 {
+  font-family: "gyst-variable",sans-serif;
+  font-variation-settings: 'wght' 400;
+}
+
+h2 {
+  font-family: "gyst-variable",sans-serif;
+  font-variation-settings: 'wght' 100;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+}
+/* Nav Bar Customization */
+
+.navbar{
+	background-color:#fff;
+	overflow: hidden;
+}
+
+#navbarNav{
+	justify-content: flex-end;
+	padding-right: 30px;
+}
+
+/* Hero */
+
+img {
+	max-width: 100%;
+
+}
+
+.container-fluid#hero{
+	display: grid;
+	position: relative;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: auto;
+	background-image: url("./images/artist.png");
+	background-size: 100%;
+	background-height: 70em;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+
+#the {
+	font-size: 4em;
+	grid-column-start: 7;
+	grid-column-end: 9;
+	grid-row-start: 4;
+	grid-row-end: 5;
+  font-family: "gyst-variable",sans-serif;
+  font-variation-settings: 'wght' 100;
+  font-style: italic;
+  z-index: 3;
+}
+
+#great {
+	font-size: 9em;
+	grid-column-start: 7;
+	grid-column-end: 11;
+	grid-row-start: 5;
+	grid-row-end: 6;
+  font-family: "gyst-variable",sans-serif;
+  font-variation-settings: 'wght' 400;
+  font-style: bold;
+  z-index: 3;
+}
+.artemisia {
+	font-size: 9em;
+	grid-column-start: 2;
+	grid-column-end: 8;
+	grid-row-start: 12;
+	grid-row-end: 16;
+  font-family: "gyst-variable",sans-serif;
+  font-variation-settings: 'wght' 600;
+  font-style: italic;
+  z-index: 3;
+}
+
+.artemisia::before {
+    content: "";
+    background-image: url(images/artist.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+.artemisia:hover::before {
+	opacity: 0;
+	
+}
+
+
+#gentileschi {
+	font-size: 6em;
+	grid-column-start: 8;
+	grid-column-end: 12;
+	grid-row-start: 16;
+	grid-row-end: 20;
+  font-family: "gyst-variable",sans-serif;
+  font-variation-settings: 'wght' 300;
+  z-index: 3;
+}
+
+#paint {
+	grid-column-start: 9;
+	grid-column-end: 10;
+	grid-row-start: 12;
+	grid-row-end: 14;
+  z-index: 1;
+}
+
+/* About Page */
+
+.container {
+  margin-top: 20px;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+}
+
+.artist-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  }
+
+.artist-image {
+  max-width: 100%;
+}
+
+.artist-bio {
+  text-align: justify;
+}
+
+.custom-button {
+	background-color: #1e3d83;
+	color: #f8dac9;
+}
+
+.custom-button:hover {
+	background-color: #f8dac9;
+	color: ##1e3d83;
+	transition: 1s;
+}
+

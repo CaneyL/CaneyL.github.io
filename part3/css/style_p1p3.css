@@ -164,7 +164,8 @@ section#welcome {
 }
 img#cards { 
 	display: block;
-	align-content: center;}
+	align-content: center;
+	margin:1 auto;}
 
 section#cards {
 	display: inline-block;
@@ -176,7 +177,7 @@ section#orangecup {
 	background-color: olive;
 	padding: 10pt;
 	width: 30%;
-	margin:10px;
+	margin:1 auto px;
 	border-radius:10px
 
 }
