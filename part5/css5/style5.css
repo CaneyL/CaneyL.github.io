@@ -204,7 +204,7 @@ img {
   }
 
 .artist-image {
-  max-width: 300px
+  max-width: 100%;
 }
 
 .artist-bio {
