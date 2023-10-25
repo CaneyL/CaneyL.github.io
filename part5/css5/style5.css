@@ -199,16 +199,18 @@ img {
 
 .artist-info {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   }
 
-.artist-image {
+#artist-image {
   max-width: 100%;
+  grid-column-start: 1;
+ 	grid-column-end: 8;
 }
 
-.artist-bio {
-  text-align: justify;
+#artist-bio {
+  grid-column-start: 4;
+ 	grid-column-end: 12;
 }
 
 .custom-button {
