@@ -188,8 +188,7 @@ img {
   margin-top: 20px;
   display: grid;
 	position: relative;
-	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: auto;
+
 }
 
 .header {
@@ -205,7 +204,7 @@ img {
 #artist-image {
   max-width: 100%;
   grid-column-start: 1;
- 	grid-column-end: 8;
+ 	grid-column-end: 4;
 }
 
 #artist-bio {
@@ -216,6 +215,8 @@ img {
 .custom-button {
 	background-color: #1e3d83;
 	color: #f8dac9;
+	width: 200px;
+	padding: 10px, 10px
 }
 
 .custom-button:hover {
