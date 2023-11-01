@@ -560,6 +560,7 @@ a.CTAtoo {
 	padding: 10px;
 	left: 50%;
 	transform: translateX(-50%);
+	transition: 2s ease;
 }
 
 /* Product Attributes */
@@ -568,19 +569,21 @@ a.CTAtoo {
 
 #productattributes {
     background-image: url("../images/productbackground2.svg");
-    background-position: center;
     background-size: cover;
+    background-repeat: repeat;
+    width: 100%;
     margin: 0;
+    overflow: hidden;
 }
 
-#shadesofgrey {
+.container#shadesofgrey {
 	background-color: #161616;
 	color: #fff;
 	width: 95vw;
 	margin: 0 auto;
 	border-radius: 20px;
-	margin-top: 50px;
 	margin-bottom: 50px;
+	margin-top: 50px;
 	padding: 100px;
 	display: grid;
 	grid-template-columns: 40vw auto;
@@ -608,15 +611,17 @@ a.CTAtoo {
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
+#productcolors {
+	justify-content: center;
+}
+
+
 .colourheader {
 	margin-top: 60px;
+	text-align: center;
 }
 
 
-#productcolors {
-	border-style: solid;
-	border-color: #161616;;
-}
 
 .card1 {
 	background-color: white;
@@ -630,6 +635,7 @@ a.CTAtoo {
 	transition: 0.3s;
 	text-align: center;
 	justify-content: center;
+	transition: 2s ease;
 }
 
 .card1 h5 {
@@ -655,6 +661,7 @@ a.CTAtoo {
 	transition: 0.3s;
 	text-align: center;
 	justify-content: center;
+	transition: 2s ease;
 }
 
 .card2 h5 {
@@ -678,6 +685,7 @@ a.CTAtoo {
 	transition: 0.3s;
 	text-align: center;
 	justify-content: center;
+	transition: 2s ease;
 }
 
 .card3 h5 {
@@ -689,6 +697,31 @@ a.CTAtoo {
 	padding-top: 100px;
 }
 
+
+
+.card1:hover {
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+	transition: 1s ease;
+
+}
+
+.card2:hover {
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+	transition: 1s ease;
+
+}
+
+.card3:hover {
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+	transition: 1s ease;
+
+}
 
 .colA {
 	display: flex;
@@ -733,9 +766,7 @@ a.CTAtoo {
 	padding-bottom: 30px;
 }
 
-#buynow img {
-	z-index: 0;
-}
+
 
 /* Footer styles and rules */
 
