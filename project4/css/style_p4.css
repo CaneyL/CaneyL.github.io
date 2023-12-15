@@ -1,0 +1,1190 @@
+/* CSS Style Sheet for Project 4 */
+
+/* 
+
+Colors
+
+Primary Brand colours
+
+red #f1444c
+ivory #f7f1ed
+evergreen #4a570e
+black #38332a
+bronze #75643f
+
+secondary brand colour
+
+button, Cta colour
+
+
+font choices
+
+bold title - font-family: 'Playfair Display', serif;
+
+subtitles - 
+
+body - Plantin MT Pro
+
+font-family: "plantin", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+h3 - 
+ {
+  font-family: "loew-variable",sans-serif;
+  font-variation-settings: 'wdth' 100, 'wght' 500, 'ital' 0;
+}
+
+
+*/
+
+
+
+
+/*Box Model Fix */
+
+
+/* Responsive viewport declaration */
+@-ms-viewport {width: device-width;}
+@viewport {width: device-width;} 
+/* put this in for future compatibility */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Clear Fix */
+
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+
+/* image rules */
+
+img {
+  width: 100%;
+}
+
+
+body {
+  background-image: url("../images/Paper 10.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  margin: 0;
+
+}
+
+
+
+font-size:
+/*Type Hiearchy*/
+
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: calc(45px + 0.390625vw);
+  margin: 1;
+
+}
+
+h2 { 
+  font-family: 'Playfair Display', serif;
+  font-weight: 300;
+  font-size: calc(38px + 0.390625vw);;
+  
+
+ }
+
+h3 {
+  font-family: "loew-variable",sans-serif;
+  font-variation-settings: 'wdth' 100, 'wght' 400, 'ital' 0;
+  font-size: calc(10px + 0.390625vw);
+
+ }
+
+
+h5 {
+  font-family: 'Playfair Display', serif;
+  font-weight: lighter;
+  font-style: italic;
+  color:#38332a;
+  font-size: calc(18px + 0.390625vw);
+  margin: 1;
+
+}
+
+p {
+  font-family: "plantin", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: calc(14px + 0.390625vw);
+}
+ a {
+  text-decoration: none;
+ }
+
+ a:hover {
+
+ }
+
+ ul {
+  list-style: none;
+ }
+
+
+/*----------------------------------------Header Styling ---------------------------------
+
+---------------------------------------------------------------------------------------------- *//
+
+
+
+    #navContainer {
+      height: 100px;
+      padding-top: 40px;
+      background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+      background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#00000000', GradientType=0);
+
+    }
+
+    #headerNav .navbar-nav .nav-link {
+      color: #38332a;
+      font-family: "loew-variable", sans-serif;
+      font-variation-settings: "ital" 0, "wght" 400, "wdth" 100;
+      font-size: 16px;
+      color: #38332a;
+    }
+
+
+   
+    a,button {
+    font-family: "loew-variable", sans-serif;
+    font-variation-settings: "ital" 0, "wght" 400, "wdth" 100;
+    font-size: 16px;
+    color: #38332a;
+    text-decoration: none;
+    padding: 0;
+    
+}
+ #navbarDropdownMenuLink {
+  border: solid;
+  border-color: #38332a;
+  padding: 2px 10px 2px 10px; 
+  margin-right: 20px;
+ }
+
+.bibi-search {
+  margin-top: 15px;
+  color:#4a570e;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#button-container {
+  justify-content: center;
+  align-items: center;
+}
+
+
+.cta-1 {
+  font-family: "loew-variable", sans-serif;
+  font-variation-settings: "ital" 0, "wght" 400, "wdth" 100;
+  font-size: 16px;
+  color: #38332a;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 2px;
+  margin-top: 20px; 
+}
+
+.cta-1::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #38332a;
+  transform-origin: bottom center;
+  transition: transform 0.25s ease-out;
+}
+
+.cta-1:hover {
+  color: #38332a
+}
+
+.cta-1:hover::after {
+  transform: scaleX(1);
+}
+
+.cta-2 h3 {
+  margin: 0;
+}
+
+.cta-1 {
+  font-family: "loew-variable", sans-serif;
+  font-variation-settings: "ital" 0, "wght" 400, "wdth" 100;
+  font-size: 16px;
+  color: #38332a;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 2px; /* Adjust as needed */
+}
+
+.cta-1::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #38332a;
+  transform-origin: bottom center;
+  transition: transform 0.25s ease-out;
+}
+
+.cta-1:hover::after {
+  transform: scaleX(1);
+}
+
+
+
+.cta-2 {
+  margin-top: 2em;
+  border: 1px solid #38332a;
+  padding: 8px 8px;
+  background-color:#f7f1ed;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-2:hover {
+  background-color:#38332a;
+  color: #f7f1ed;
+}
+
+.navbar-nav .nav-item a {
+  color: #38332a;
+  position: relative;
+  text-decoration: none;
+  display: inline-block; \
+}
+
+.navbar-nav .nav-item a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #38332a;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navbar-nav .nav-item a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+
+/*----------------------------------------Home Page Styling ---------------------------------
+
+----------------------------------------------------------------------------------------------*/
+
+
+#hero {
+  margin-top: 7vw;
+  margin-bottom: 7vw;
+  position: relative;
+  height: auto;
+  display: flex;
+}
+
+
+#signaturescents {
+  margin-top: 14vw;
+  position: relative;
+}
+
+#hero-text img {
+  margin-bottom: 34px;
+}
+ 
+.button-container {
+  isplay: inline-block;
+  position: relative;
+  overflow: hidden;
+    }
+
+
+#hero-img {
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+#signaturescents p {
+  margin-top: 1em;
+  font-size: 20px;
+  color:#38332a ;
+}
+
+.ripped-paper-section {
+  background-image: url('../images/mission.png');
+  background-size: ;
+  background-position: center;
+  background-repeat: repeat-x;
+  height: 500px;
+  margin-top: 0;
+  
+
+  
+}
+
+.ripped-paper-section h2,
+.ripped-paper-section p {
+  z-index: 1;
+}
+
+.container {
+  position: relative;
+}
+
+.row:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../images/mission.png') no-repeat center top; /* Use the same ripped paper image as the background */
+  z-index: 0; /* Place the ripped paper behind other content */
+  pointer-events: none; /* Ensure the pseudo-element doesn't interfere with interactions */
+}
+
+
+#mission-paper {
+padding-top: 5em;
+color:#f7f1ed;
+background-image: url(../images/mission.png);
+background-blend-mode: multiply;
+justify-content: center;
+align-items: center;
+}
+
+#mission-image {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: auto;
+
+
+}
+
+#ripmission {
+  margin: -10;
+}
+
+
+
+
+#values {
+margin-top: 7vw;
+margin-bottom: 7vw;
+width: 100%;
+display: grid;
+grid-template: auto 1fr;
+border-bottom: 1px solid black #38332a;
+}
+
+
+#value-img {
+  display: flex;
+  max-width: 100%;
+  height: auto;
+  border: solid;
+  border-color: #38332a;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+
+ 
+}
+
+
+#value-chunk h2 {
+  margin-bottom: 53px;
+}
+
+#value-chunk {
+  color:#4A570E;
+}
+
+.values {
+  list-style-type: none; 
+  margin: 0;
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: #4A570E; 
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+
+/*---------------------------------------- fragrance banner ---------------------------------*/
+#container-banner {
+      position: relative;
+      height: 188px;
+      background-image: url(../images/claude-monet--banks-of-the-seine--ve-theuil--1880--nga-46652@1x.png);
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color:#f7f1ed;
+    }
+
+/*---------------------------------------- Shop Styling ---------------------------------*/
+#fragrancesections {
+  margin-top: 5em;
+  margin-bottom: 7em;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /* 12-column grid */
+  gap: 20px; /* Adjust the gap between rectangles as needed */
+  justify-content: center; /* Center the content horizontally */
+}
+
+.rectangle {
+  grid-column: span 8;
+  grid-column-start: 3;
+  grid-column-end: 11;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  height: 100px; 
+  background-color: #3498db;
+  transition: background-color 0.3s;
+}
+
+.rectangle h2{
+ font-size: calc(28px + 0.390625vw);
+ color: ivory;
+ z-index: 1;
+  
+}
+
+#herbal {
+  background-image: url('../images/vincent.png'); 
+  background-size: cover;
+}
+
+#floral {
+  background-image: url('../images/poppy@1x.png'); 
+  background-size: cover;
+}
+
+#warm {
+  background-image: url('../images/manegt.jpeg'); 
+  background-size: cover;
+
+}
+
+#fresh {
+  background-image: url('../images/fresh.png');
+  background-size: cover;
+}
+#herbal,
+#floral,
+#warm,
+#fresh {
+  position: relative;
+  overflow: hidden;
+}
+
+#herbal::after,
+#floral::after,
+#warm::after,
+#fresh::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(56, 51, 42, 0.5); 
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+#herbal:hover::after,
+#floral:hover::after,
+#warm:hover::after,
+#fresh:hover::after {
+  opacity: 1;
+}
+
+#fragrancecta {
+  column-span: 3;
+  grid-column-start: 6;
+  grid-column-end: 8;
+}
+
+
+/*---------------------------------------About Page ---------------------------------*/
+
+
+#container-banner-about {
+  position: relative;
+  height: 188px;
+  background-image: url(../images/claude-monet--banks-of-the-seine--ve-theuil--1880--nga-46652@1x.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f7f1ed;
+}
+
+#aboutmission {
+  position: relative;
+  margin-top: 8em;
+  margin-bottom: 3em;
+  display: flex;
+}
+#about-mission-text {
+  display: flex;
+  flex-direction: column;
+}
+#perfume-bottle img {
+  max-width: 400px;
+  height: auto;
+  border: solid;
+  border-color: #38332a;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.decorative-line {
+  border: none;
+  border-top: 2px solid black;
+  border-color: black;
+  width: 60px;
+  margin-top: 20px;
+  margin-right: 0;
+}
+
+#brandstory {
+  background-image: url('../images/claude-monet-bottom.png');
+  background-size: cover;
+  background-position: center;
+  max-height: auto;
+  margin-top: 0;
+  padding-top: 2em; /* Adjust this value as needed */
+  padding-bottom: 2em;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+#brandstory-text{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+
+
+    .value-grid-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 80px;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-bottom: 5vw;
+      justify-content: center;
+    }
+
+    .value-grid-item {
+      flex: 00 calc(33.33% - 16px);
+      justify-content: center;
+      text-align: center;
+    }
+
+    .text-chunk {
+      text-align: left;
+      padding-right: 20px;
+      margin-bottom: 2em;
+    }
+
+.brown-rectangle {
+  position: relative;
+  left: 0;
+  bottom: 110px;
+  width: 100%;
+  height: 80px;
+  mix-blend-mode: multiply;
+  opacity: .9;
+  background-color: #75643f; /* Use the desired brown color */
+  z-index: -1; /* Place it behind other content */
+}
+
+#retailers a{
+  font-family: "plantin", sans-serif;
+  font-weight:300;
+  font-style: normal;
+  color: #38332a;
+  font-size: calc(12px + 0.390625vw);
+  margin: 0;
+
+}
+
+#retailers a:hover{
+  color:#f1444c;
+
+
+}
+
+#retailers h2{
+ color:#38332a;
+ margin-bottom: 40px; 
+}
+#retailers h3{
+font-family: "loew-variable",sans-serif;
+font-variation-settings: 'wdth' 100, 'wght' 600, 'ital' 0;
+font-size: calc(12px + 0.390625vw);
+color:#38332a ;
+
+
+}
+
+#retailers p{
+font-weight:300;
+font-style: normal;
+color: #38332a;
+font-size: calc(12px + 0.390625vw);
+margin: 0;
+
+}
+
+.retailerinfo{
+  margin-bottom: 70px;
+  margin-top: 70px;
+}
+
+#stockist {
+  margin-bottom: 7vw;
+}
+#googlemap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#letter {
+  background-image: url(../images/bluepaper.png);
+  height:auto;
+  margin-bottom: 5vw;
+
+}
+
+#peaches {
+  width: 300px;
+  opacity:0.9;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-top: 80px;
+
+}
+
+#leftletter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+#vl {
+  border-left: 1px solid #38332a;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 0;
+
+}
+
+#rightletter {
+  margin-top: 150px;
+}
+/*---------------------------------------- Product Page ---------------------------------
+
+----------------------------------------------------------------------------------------------*/
+
+
+#secondaryNavigation .navbar-nav a {
+    margin-right: 15px; 
+    font-size: 14px;
+    color:#75643f;
+}
+
+#ourproducts h2 {
+  font-size: 30px;
+  color:#75643f ;
+  margin-top: 30px;
+}
+
+
+#secondaryNavigation .navbar-nav .nav-item a {
+
+
+}
+
+#secondaryNavigation .navbar-nav .nav-item a::after {
+  background-color: #75643f;
+}
+
+#container-banner-product {
+  position: relative;
+  height: 188px;
+  background-image: url(../images/poppy-top.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f7f1ed;
+  margin-bottom: 15px;
+}
+
+
+.card {
+  border-radius: 0;
+  border: none;
+  justify-content: center;
+  place-items: center;
+  height: auto;
+  width: auto;
+  padding-top: 16rem;
+  padding-left: 30px auto;
+  padding-right: 30px auto;
+  overflow: hidden;
+  transition: transform 500ms ease;
+  margin-top: 5em;
+
+}
+
+.card:hover{
+  transform:scale(1.02);
+}
+
+
+
+
+.card-content {
+  padding: 2em,3.8em 3.8em,4em;
+  background: rgba(255, 255, 255, 1.0);
+  justify-content: center;
+  text-align: center;
+  place-items: center;
+  transform: translateY(99%);
+  transition: transform 500ms ease;
+  width:700px;
+}
+
+.card:hover .card-content{
+  transform:translateY(0);
+}
+
+.productline {
+  width: 10%;
+  height: 1px;
+  background-color: #38332a;
+  margin: 10px auto;
+}
+
+.card-h3{
+  
+}
+
+.card-p{
+  font-style: italic;
+  color: #f1444c;
+  padding-bottom: 10px;
+}
+
+.productInfo{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.productInfo h2{
+  font-size: 20px;
+  color: #38332a;
+}
+
+.productInfo p {
+  font-style: italic;
+  color:#38332a; ;
+  
+}
+
+#card-1{
+  background-image: url(../images/fall.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat:repeat-y repeat-x;
+}
+#card-2{
+  background-image: url(../images/violet.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat:repeat-y repeat-x;
+}
+
+#card-3{
+  background-image: url(../images/sunshine.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat:repeat-y repeat-x;
+}
+
+#card-4{
+  background-image: url(../images/tropical.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat:repeat-y repeat-x;
+}
+
+#card-5{
+  background-image: url(../images/winter.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat:repeat-y repeat-x;
+}
+
+#card-6{
+  background-image: url(../images/meadow.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat:repeat-y repeat-x;
+}
+
+/*----------give us a try-----*/
+
+#giveusatry {
+  background-color:rgba(117, 100, 63, 0.95);
+  background-blend-mode: multiply;
+  margin-top: 5vw;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+}
+
+#orange{
+  max-width: 400px;
+  margin-top: 3em;
+}
+
+
+
+#giveusatry h2 {
+  margin-bottom: 1em;
+}
+
+#giveusatry p {
+  margin-bottom: 1em;
+}
+
+#try-chunk{
+  color:#f7f1ed;
+}
+
+#line {
+  width: 3em;
+  height: 0.15em;
+  margin-top: 5vw;
+}
+
+#lotusinsta h2{
+  color:#38332a;
+  font-size: 25px;
+  margin-top: 25px;
+}
+
+#lotusinsta h3{
+  color:#75643f;
+  margin-top: 20px;
+}
+
+#collage-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+#collage-column {
+  flex: 33.33%;
+  max-width: 33.33%;
+  padding: 0 4px;
+  max-height: 800px;
+  margin-bottom: 3vw;
+
+}
+
+
+#collage-column img{
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  overflow: hidden;
+
+}
+/*---------------------------------------- Footer Styling ---------------------------------
+
+----------------------------------------------------------------------------------------------*/
+.newsletter {
+  margin-bottom:4em;
+}
+.my-input {
+  border-color: #38332a;
+  display: flex;
+
+}
+
+.my-button {
+  background-color: #38332a;
+  border-color: #38332a;
+}
+.my-button:hover {
+  background-color: #f1444c; 
+  border-color: #f1444c;
+}
+
+footer h3 {
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  padding-top: 46px;
+  background-color: white;
+  position: relative;
+  margin:0 ;
+}
+
+.foot-logo li{
+
+  margin-bottom: 20px;
+
+
+}
+
+footer p{
+  padding: 0;
+  margin-bottom: 5px;
+  font-size: 19px;
+
+}
+
+
+/*************** Media Queries *************/
+
+
+
+
+
+@media only screen and (max-width: 770px) {
+
+#hero {
+  justify-content: space-between;
+}
+
+#signaturescents {
+  order: 2;
+  margin-top: 0;
+  margin-bottom: 8vw;
+}
+
+#hero-img {
+  order: 1;
+  margin-bottom: 5vw;
+}
+
+
+.rectangle{
+  height: 80px;
+  grid-column-start: 2;
+  grid-column-end: 12;
+
+}
+
+.ripped-paper-section{
+  height: 600px;
+}
+
+}
+
+@media only screen and (max-width: 770px) {
+
+#smalllogo {
+  mx
+}
+
+#hero {
+  justify-content: space-between;
+}
+
+#signaturescents {
+  order: 2;
+  margin-top: 0;margin-bottom: 8vws;
+
+}
+
+#hero-img {
+  order: 1;
+  margin-bottom: 5vw;
+}
+
+
+
+#value-img {
+  margin-top: 8vw;
+  margin-bottom: 5vw;
+
+}
+
+#aboutmission {
+ position: relative;
+ min-height: auto;
+  margin-top: 3em;
+
+}
+
+
+#about-mission-text {
+  order: 2;
+  margin-top: 3vh;
+  margin-left: 0;
+}
+
+#perfume-bottle {
+  order: 1;
+  margin-left: 0;
+  margin-right: 0;
+  display: block;
+  text-align: center;
+  margin-top: 0;
+
+}
+
+.value-grid-item.text-chunk {
+order: 3; 
+  }
+
+
+
+.value-grid-item img{
+width: 300px;
+margin: 0 auto;
+flex-direction: row-reverse;
+}
+
+.value-grid-container {
+ display: flex;
+flex-direction: column;
+    }
+
+.brown-rectangle {
+  bottom: 50px;
+}
+
+
+}
+
+
+
+}
+
+@media (max-width:1000px) {
+  body {
+    flex-direction: column;
+  }
+
+  #navbar {
+    height: 10vh;
+  }
+
+  #fragrancecta {
+    grid-column-start: 5;
+    grid-column-end: 9;
+  }
+
+      .text-chunk {
+      text-align: left;
+ 
+  
+    }
+
+
+.brown-rectangle {
+  bottom: 80px;
+}
+
+.orange{
+  margin: 0;
+  order: 1;
+}
+
+.try-chunk{
+  margin-bottom: 5vw;
+}
+
+@media only screen and (max-width:600px) {
+  #ripmission {
+    display: none;
+  }
+
+  .brown-rectangle {
+  bottom: 40px;
+}
+
+}
+
+
+
+
+  }
+}
+

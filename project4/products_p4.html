@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lotos homepage</title>
+   
+     <!-- Bootstrap CSS add normalize -->
+     <link rel="stylesheet" type="text/css" href="css/normalize_p4.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <link rel="stylesheet" type="text/css" href="css/style_p4.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+     <!-- This is a Hamburger dropdown stylesheet from W3 Schools -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-LCJyN5BUf09oUGKG6Zm1fV/y+ffawb8+FvA03bF6z5F1XCHm5JkH7C5KFgxs1OTb7g8jJmYpk2b8g7Y7lZgCgg=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fonts go here -->
+
+    <link rel="stylesheet" href="https://use.typekit.net/the3zyy.css"> <!--plantin : body -->
+    <link rel="stylesheet" href="https://use.typekit.net/the3zyy.css"> <!-- loew variable H3 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  <!-- Navbar found at https://htmljstemplates.com/html/bootstrap-5-navbars#section_2 and customized to fit wireframe -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12" id="navContainer">
+          <nav class="navbar navbar-expand-lg navbar-light p-3" id="headerNav">
+            <div class="container-fluid">
+              <a class="navbar-brand d-block d-lg-none" href="#">
+                <img src="images/logo.svg" height="50" />
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- Left links -->
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <div class="me-auto" id="navbarLeft">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link mr-auto-2 px-3" aria-current="page" href="index_p4.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link mr-auto-2 px-3" href="about_p4.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link mr-auto-2 active px-3" href="products_p4.html">PRODUCTS</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mx-auto order-0 d-none d-lg-block">
+                  <a class="navbar-brand justify-content-center mx-auto" href="#">
+                    <img src="images/logo.svg" height="50">
+                  </a>
+                </div>
+                <div class="ms-auto" id="navbarRight">
+                  <ul class="navbar-nav mx-auto">
+                    <li class="nav-link dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        CONTACT US
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                        <li><a class="dropdown-item" href="#">StockList</a></li>
+                        <li><a class="dropdown-item" href="#">Newsletter</a></li>
+                      </ul>
+                    <li class="search">
+                      <a class="search" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bibi-search" viewBox="0 0 16 16">
+                          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+<!-- Product Banner -->
+ <div class="container-fluid" id="container-banner-product">
+    <div class="banner">
+      <div class="banner-text">
+        <h2>Our Scent Landscapes</h2>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Products Nav -->
+
+<div id="secondaryNavigation">
+      <nav role="secondary-navigation">
+        <div class="py-3 text-center" id="ourproducts">
+          <h2>Our Products</h2>
+        </div>
+      </nav>
+     <div class="navbar-expand-md">
+        <div class="navbar-light text-center my-2">
+          <button class="navbar-toggler w-75" type="button" data-bs-toggle="collapse" data-bs-target="#secondary-navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span> <span class="align-middle">Filter</span>
+          </button>
+        </div>
+        <div class="text-center mt-3 collapse navbar-collapse" id="secondary-navbarNavDropdown">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">All</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">HERBAL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FLORAL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">WARM</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FRESH</a>
+            </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+<!--All Products. followed this tutorial https://www.youtube.com/watch?v=5DEq5cWNYt8-->
+<section class="container-fluid" id="productsshown">
+  <div class="container" id="productgrid">
+    <div class="row">
+      <!-- First Card -->
+      <div class="col-md-4 mx-auto">
+        <div class="card" id="card-1">
+          <div class="card-content">
+            <hr class="product-line">
+            <h3 class="card-h3">SMELLS LIKE</h3>
+            <p class="card-p">falls approaching</p>
+            <h3 class="card-h3">NOTES OF</h3>
+            <p class="card-p">tobacco, musk, amber</p>
+          </div>
+        </div>
+        <div class="productInfo">
+          <h2 class="productName">Autumn Ember</h2>
+          <p class="price">$150</p>
+        </div>
+      </div>
+
+      <!-- Second Card -->
+      <div class="col-md-4 mx-auto">
+        <div class="card" id="card-2">
+          <div class="card-content">
+            <hr class="product-line">
+            <h3 class="card-h3">SMELLS LIKE</h3>
+            <p class="card-p">frolicking in fields</p>
+            <h3 class="card-h3">NOTES OF</h3>
+            <p class="card-p">floral,thyme,vanilla</p>
+          </div>
+        </div>
+        <div class="productInfo">
+          <h2 class="productName">Violet Meadows</h2>
+          <p class="price">$150</p>
+        </div>
+      </div>
+
+      <!-- Third Card -->
+      <div class="col-md-4 mx-auto">
+        <div class="card" id="card-3">
+          <div class="card-content">
+            <hr class="product-line">
+            <h3 class="card-h3">SMELLS LIKE</h3>
+            <p class="card-p">fresh air</p>
+            <h3 class="card-h3">NOTES OF</h3>
+            <p class="card-p">citrus, mint, ocean breeze</p>
+          </div>
+        </div>
+        <div class="productInfo">
+          <h2 class="productName">Coastal Citrus Breeze</h2>
+          <p class="price">$150</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Fourth Card -->
+      <div class="col-md-4 mx-auto">
+        <div class="card" id="card-4">
+          <div class="card-content">
+            <hr class="product-line">
+            <h3 class="card-h3">SMELLS LIKE</h3>
+            <p class="card-p">summer vibes</p>
+            <h3 class="card-h3">NOTES OF</h3>
+            <p class="card-p">coconut, vanilla, sun-kissed skin</p>
+          </div>
+        </div>
+        <div class="productInfo">
+          <h2 class="productName">Tropical Sunset Bliss</h2>
+          <p class="price">$150</p>
+        </div>
+      </div>
+
+      <!-- Fifth Card -->
+      <div class="col-md-4 mx-auto">
+        <div class="card"id="card-5">
+          <div class="card-content">
+            <hr class="product-line">
+            <h3 class="card-h3">SMELLS LIKE</h3>
+            <p class="card-p">winter magic</p>
+            <h3 class="card-h3">NOTES OF</h3>
+            <p class="card-p">cinnamon, cedar, snowflakes</p>
+          </div>
+        </div>
+        <div class="productInfo">
+          <h2 class="productName">Frosty Cinnamon Cedar</h2>
+          <p class="price">$150</p>
+        </div>
+      </div>
+
+      <!-- Sixth Card -->
+      <div class="col-md-4 mx-auto">
+        <div class="card" id="card-6">
+          <div class="card-content">
+            <hr class="product-line">
+            <h3 class="card-h3">SMELLS LIKE</h3>
+            <p class="card-p">spring blossoms</p>
+            <h3 class="card-h3">NOTES OF</h3>
+            <p class="card-p">floral, greenery, sunshine</p>
+          </div>
+        </div>
+        <div class="productInfo">
+          <h2 class="productName">Blooming Meadow Sunshine</h2>
+          <p class="price">$150</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Care to give us a try? -->
+
+
+<div class="container-fluid" id="giveusatry">
+  <div class="container">
+    <div class="row">
+      <!-- Text Chunk -->
+      <div class="col-md-5" id="try-chunk">
+        <h2>Care to give <br> us a try?</h2>
+        <p>While we don’t currently have a storefront or online shop, we invite you to experience the allure of our scents through our dedicated suppliers.</p>
+        <p>Explore the essence of our Alberta-owned company by discovering our perfumes at our partnered locations.</p>
+
+
+        </p>
+        <button class="cta-2 justify-content-center" href="#">
+          <h3>SEE SUPPLIERS</h3>
+        </button>
+      </div>
+
+      <!-- Image -->
+      <div class="col-md-5 offset-md-2 col-sm-8 offset-sm-0">
+        <img src="images/orange.png" class="img-fluid" alt="Orange Image" id="orange">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Our Lotus Eaters -->
+
+<section class="container-fluid text-center" id="lotusinsta">
+  <img src="images/line.png" id="line">
+  <h2>Our Lotus Eaters</h2>
+  <h3>@lotosfragrances</h3>
+</section>
+
+<!-- instagram photo grid -->
+<div class="container">
+<div class="row" id="collage-row">
+  <div class="column" id="collage-column">
+    <img src="images/collage-1.png">
+    <img src="images/collage-2.png">
+
+  </div>
+  <div class="column"id="collage-column">
+    <img src="images/collage-3.png">
+    <img src="images/collage-4.png">
+  </div>
+  <div class="column" id="collage-column">
+    <img src="images/collage5.png">
+  </div>
+</div>
+</div>
+
+<!-- Footer found on bootstrap website and customized https://getbootstrap.com/docs/5.2/examples/footers/
+********************************************************* -->
+
+<footer class="container-fluid">
+  <div class="container">
+    <div class="row" id="newsletter">
+      <div class="col-md-6 mb-2">
+        <h5 class>Stay in the loop with our Newsletter</h5>
+      </div>
+      <div class="col-md-6 mb-4">
+        <form class="d-flex flex-column flex-md-row w-100 gap-0 my-form">
+          <label for="newsletter1" class="visually-hidden">Email Address</label>
+          <input id="newsletter1" type="text" class="form-control mb-2 rounded-0 my-input" placeholder="Email Address">
+          <button class="btn btn-primary mb-2 rounded-0 my-button" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <hr style="width:100%;text-align:center;margin-bottom:40px;color:#4a570e;">
+
+  <div class="row" id="foot-links">
+    <nav class="col-md-2" id="foot-logo">
+      <ul>
+        <li style="margin-bottom: 40px;"> <a href="index.html"><img src="images/logo.svg" alt="lotos Logo" style="max-width: 50%; height: auto;"></a></li>
+        <li style="margin-bottom: 10px;"><a href="#">Ben@lotos.ca</a></li>
+        <li style="margin-bottom: 10px;"><a href="#">780 122 1004</a></li>
+      </ul>
+    </nav>
+
+    <nav class="col-md-2" id="foot-prod">
+      <ul>
+      </ul>
+    </nav>
+
+    <nav class="col-md-2" id="foot-abo">
+      <ul>
+        <li><p>About Us</p></li>
+        <li>Our Story</li>
+        <li>Stockist</li>
+        <li>Contact</li>
+        <li>Newsletter</li>
+      </ul>
+    </nav>
+
+    <nav class="col-md-2" id="foot-products">
+      <ul>
+        <li><p>Products</p></li>
+        <li>Perfumes</li>
+        <li>Incense</li>
+        <li>Body Oils</li>
+      </ul>
+    </nav>
+
+    <nav class="col-md-2" id="foot-social">
+      <ul>
+        <li><p>Social Media</p></li>
+        <li>Instagram</li>
+        <li>Facebook</li>
+        <li>Pinterest</li>
+      </ul>
+    </nav>
+  </div>
+
+  <hr style="width:100%;text-align:center;margin-bottom:40px;color:#4a570e;">
+
+  <div class="row" id="bottom">
+    <div class="col-md-3">
+      <ul id="socials">
+      </ul>
+    </div>
+    <div class="col-md-auto"></div>
+    <div class="col-md-4">
+      <div id="legal">
+        <a href="#">Terms</a>
+        |
+        <a href="#">Privacy</a>
+        <span>&copy2023 Lotos</span>
+      </div>
+    </div>
+  </div>
+</div>
+</footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+
