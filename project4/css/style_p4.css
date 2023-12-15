@@ -378,9 +378,8 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('../images/mission.png') no-repeat center top; /* Use the same ripped paper image as the background */
-  z-index: 0; /* Place the ripped paper behind other content */
-  pointer-events: none; /* Ensure the pseudo-element doesn't interfere with interactions */
+  background: url('../images/mission.png') no-repeat center top; 
+  z-index: 0; 
 }
 
 
@@ -473,9 +472,9 @@ border-bottom: 1px solid black #38332a;
   margin-top: 5em;
   margin-bottom: 7em;
   display: grid;
-  grid-template-columns: repeat(12, 1fr); /* 12-column grid */
-  gap: 20px; /* Adjust the gap between rectangles as needed */
-  justify-content: center; /* Center the content horizontally */
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px; 
+  justify-content: center;
 }
 
 .rectangle {
@@ -606,7 +605,7 @@ border-bottom: 1px solid black #38332a;
   background-position: center;
   max-height: auto;
   margin-top: 0;
-  padding-top: 2em; /* Adjust this value as needed */
+  padding-top: 2em; 
   padding-bottom: 2em;
   color: white;
   align-items: center;
