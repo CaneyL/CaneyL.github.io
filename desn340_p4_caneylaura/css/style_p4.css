@@ -8,20 +8,18 @@ Primary Brand colours
 
 red #f1444c
 ivory #f7f1ed
+
+
+secondary brand colour
 evergreen #4a570e
 black #38332a
 bronze #75643f
-
-secondary brand colour
-
-button, Cta colour
 
 
 font choices
 
 bold title - font-family: 'Playfair Display', serif;
 
-subtitles - 
 
 body - Plantin MT Pro
 
@@ -40,14 +38,15 @@ h3 -
 
 
 
-
-/*Box Model Fix */
-
-
 /* Responsive viewport declaration */
+
 @-ms-viewport {width: device-width;}
 @viewport {width: device-width;} 
+
 /* put this in for future compatibility */
+
+
+/*Box Model Fix */
 
 html {
   box-sizing: border-box;
@@ -86,7 +85,7 @@ body {
 
 
 
-font-size:
+
 /*Type Hiearchy*/
 
 
@@ -148,33 +147,33 @@ p {
 
 
 
-    #navContainer {
-      height: 100px;
-      padding-top: 40px;
-      background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
-      background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#00000000', GradientType=0);
+#navContainer {
+  height: 100px;
+  padding-top: 40px;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#00000000', GradientType=0);
 
-    }
+  }
 
-    #headerNav .navbar-nav .nav-link {
-      color: #38332a;
-      font-family: "loew-variable", sans-serif;
-      font-variation-settings: "ital" 0, "wght" 400, "wdth" 100;
-      font-size: 16px;
-      color: #38332a;
-    }
+#headerNav .navbar-nav .nav-link {
+  color: #38332a;
+  font-family: "loew-variable", sans-serif;
+  font-variation-settings: "ital" 0, "wght" 400, "wdth" 100;
+  font-size: 16px;
+  color: #38332a;
+}
 
 
    
-    a,button {
-    font-family: "loew-variable", sans-serif;
-    font-variation-settings: "ital" 0, "wght" 400, "wdth" 100;
-    font-size: 16px;
-    color: #38332a;
-    text-decoration: none;
-    padding: 0;
+a,button {
+  font-family: "loew-variable", sans-serif;
+  font-variation-settings: "ital" 0, "wght" 400, "wdth" 100;
+  font-size: 16px;
+  color: #38332a;
+  text-decoration: none;
+  padding: 0;
     
 }
  #navbarDropdownMenuLink {
@@ -404,7 +403,17 @@ align-items: center;
   margin: -10;
 }
 
+#ripmission2 {
+  margin-top: -10;
+}
 
+/* media query would only work here, instead of below in medi query section*/
+
+@media only screen and (max-width: 600px) {
+  #ripmission {
+    display: none;
+  }
+}
 
 
 #values {
@@ -452,7 +461,7 @@ border-bottom: 1px solid black #38332a;
   margin-bottom: 13px;
 }
 
-/*---------------------------------------- fragrance banner ---------------------------------*/
+/*---------------------------------------- Homepage/fragrance banner ---------------------------------*/
 #container-banner {
       position: relative;
       height: 188px;
@@ -467,7 +476,7 @@ border-bottom: 1px solid black #38332a;
       color:#f7f1ed;
     }
 
-/*---------------------------------------- Shop Styling ---------------------------------*/
+/*----------------------------------------Homepage/ Shop Styling ---------------------------------*/
 #fragrancesections {
   margin-top: 5em;
   margin-bottom: 7em;
@@ -622,28 +631,28 @@ border-bottom: 1px solid black #38332a;
 
 
 
-    .value-grid-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-      margin-top: 80px;
-      margin-left: 20px;
-      margin-right: 20px;
-      margin-bottom: 5vw;
-      justify-content: center;
-    }
+.value-grid-container {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 16px;
+   margin-top: 80px;
+   margin-left: 20px;
+   margin-right: 20px;
+   margin-bottom: 5vw;
+   justify-content: center;
+  }
 
-    .value-grid-item {
-      flex: 00 calc(33.33% - 16px);
-      justify-content: center;
-      text-align: center;
-    }
+.value-grid-item {
+  flex: 00 calc(33.33% - 16px);
+  justify-content: center;
+  text-align: center;
+}
 
-    .text-chunk {
-      text-align: left;
-      padding-right: 20px;
-      margin-bottom: 2em;
-    }
+.text-chunk {
+  text-align: left;
+  padding-right: 20px;
+  margin-bottom: 2em;
+}
 
 .brown-rectangle {
   position: relative;
@@ -653,8 +662,8 @@ border-bottom: 1px solid black #38332a;
   height: 80px;
   mix-blend-mode: multiply;
   opacity: .9;
-  background-color: #75643f; /* Use the desired brown color */
-  z-index: -1; /* Place it behind other content */
+  background-color: #75643f; 
+  z-index: -1; 
 }
 
 #retailers a{
@@ -808,8 +817,6 @@ margin: 0;
 .card:hover{
   transform:scale(1.02);
 }
-
-
 
 
 .card-content {
@@ -1021,8 +1028,16 @@ footer p{
 /*************** Media Queries *************/
 
 
+@media only screen and (max-width:600px) {
+  #ripmission {
+    display: none;
+  }
 
+  .brown-rectangle {
+  bottom: 40px;
+}
 
+}
 
 @media only screen and (max-width: 770px) {
 
@@ -1053,9 +1068,6 @@ footer p{
   height: 600px;
 }
 
-}
-
-@media only screen and (max-width: 770px) {
 
 #smalllogo {
   mx
@@ -1129,7 +1141,6 @@ flex-direction: column;
   bottom: 50px;
 }
 
-
 }
 
 
@@ -1170,16 +1181,7 @@ flex-direction: column;
   margin-bottom: 5vw;
 }
 
-@media only screen and (max-width:600px) {
-  #ripmission {
-    display: none;
-  }
 
-  .brown-rectangle {
-  bottom: 40px;
-}
-
-}
 
 
 
